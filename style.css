@@ -2,6 +2,8 @@ body{
     height: 100vh;
     margin:0;
     font-family: 'Quicksand', sans-serif;
+    font-family: 'Anton', sans-serif;
+
     background:#222;
     background-image: url('https://source.unsplash.com/featured/?{landscape},{KEYWORD}');
     background-size:cover;
@@ -13,11 +15,7 @@ body{
     text-transform: capitalize;
     margin-left:8px;
 }
-.flexy{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .flex{
     display: flex;
     align-items: center;
@@ -39,6 +37,7 @@ body{
     position: relative;
     max-width: 2000px;
     margin:1em;
+    border-color: transparent;
     
 }
 
@@ -94,3 +93,54 @@ h1.temp{
     position: absolute;
     top:0;
 }
+iframe{
+    position: relative;
+    width: 500px;
+    height:500px;
+    top:10vh;
+}
+
+.weather-day {
+    background:#bab9bcd0;
+    color:white;
+    padding:2em;
+    border-radius:30px;
+    width:100%;
+    position: relative;
+    max-width: 700px;
+    margin:1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+  }
+#forecast-conatainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .weather-date {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .weather-icon img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .weather-temperature {
+    font-size: 50px;
+    color: #ffffff;
+  }
+  
+  .weather-description {
+    font-style: italic;
+    font-size:25px;
+  }
+  #forecast-container {
+    display: flex;
+  }
